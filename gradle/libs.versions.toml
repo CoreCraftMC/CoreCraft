@@ -38,6 +38,7 @@ paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweigh
 shadowJar = { id = "io.github.goooler.shadow", version.ref = "shadowJar" }
 
 # Paper API
+runVelocity = { id = "xyz.jpenilla.run-velocity", version.ref = "runPaper" }
 runPaper = { id = "xyz.jpenilla.run-paper", version.ref = "runPaper" }
 
 [libraries]

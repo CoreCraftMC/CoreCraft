@@ -10,9 +10,11 @@ common/build
 
 paper/.gradle
 paper/build
+paper/run
 
 velocity/.gradle
 velocity/build
+velocity/run
 
 api/.gradle
 api/build
