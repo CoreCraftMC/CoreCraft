@@ -8,7 +8,7 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import net.kyori.adventure.text.logger.slf4j.ComponentLogger;
 import java.nio.file.Path;
 
-@Plugin(id = "corecraft", name = "CoreCraft", version = "0.0.1", description = "The core plugin for play.corecraft.me!", authors = {"SvenjaReissaus", "RyderBelserion"})
+@Plugin(id = "corecraft", name = "CoreCraft", version = "0.0.1", description = "the core plugin for play.corecraft.me!", authors = {"ryderbelserion", "svenjareissaus"})
 public class CoreCraft extends Vital {
 
     private static CoreCraft plugin;
@@ -28,6 +28,11 @@ public class CoreCraft extends Vital {
     @Override
     public final boolean isVerbose() {
         return true;
+    }
+
+    @Override
+    public final String getPluginName() {
+        return "corecraft";
     }
 
     public static CoreCraft getPlugin() {

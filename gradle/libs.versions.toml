@@ -15,7 +15,7 @@ collections = "4.4"
 apache = "3.15.0"
 zstd = "1.5.6-4"
 json = "20240303"
-vital = "2.7-SNAPSHOT"
+vital = "2.7"
 
 # Mojang
 minecraft = "1.21"
