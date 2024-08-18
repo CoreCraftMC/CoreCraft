@@ -28,38 +28,7 @@ public class CoreCraft extends Vital {
 
     @Subscribe
     public void onInitialize(ProxyInitializeEvent event) {
-        //this.server.registerServer(new ServerInfo(
-        //        "testing",
-        //        InetSocketAddress.createUnresolved("127.0.0.0", 25566)
-        //));
 
-        //final String secret = "Xq2VG6C61Ftn";
-
-        //final Optional<RegisteredServer> registeredServer = this.server.getServer("testing");
-
-        //if (registeredServer.isPresent()) {
-            //final RegisteredServer server = registeredServer.get();
-
-            //final ServerInfo serverInfo = server.getServerInfo();
-
-            //HttpURLConnection connection;
-
-            /*try {
-                final URL url = URI.create("https://panel.corecraft.me/api/application/servers").toURL();
-
-                connection = (HttpURLConnection) url.openConnection();
-
-                connection.setRequestMethod("GET");
-
-                connection.setRequestProperty("Accept", "application/json");
-                connection.setRequestProperty("Content-Type", "application/json");
-                connection.setRequestProperty("Authorization", String.format("Bearer %s", "peli_htDg96rr87hNT7swKsH1cfggqxowuVOCJDCUrmZiohC"));
-
-                connection.setDoOutput(true);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }*/
-        //}
     }
 
     public static CoreCraft getPlugin() {
