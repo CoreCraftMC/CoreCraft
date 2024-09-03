@@ -1,7 +1,25 @@
 plugins {
+    //alias(libs.plugins.shadow)
     alias(libs.plugins.loom)
 
     `java-plugin`
+}
+
+project.version = "1.0.0"
+
+base {
+    archivesName = "CoreCraft"
+}
+
+loom {
+    splitEnvironmentSourceSets()
+
+    mods {
+        create("corecraft") {
+            sourceSet("main")
+            sourceSet("client")
+        }
+    }
 }
 
 dependencies {
@@ -16,12 +34,32 @@ dependencies {
 
 tasks {
     processResources {
-        inputs.properties("minecraft_version" to rootProject.name)
-        inputs.properties("loader_version" to rootProject.version)
-        inputs.properties("version" to rootProject.version)
+        inputs.properties("minecraft_version" to libs.versions.minecraft)
+        inputs.properties("loader_version" to libs.versions.loader)
+        inputs.properties("description" to rootProject.description)
+        inputs.properties("version" to project.version)
+
+        filteringCharset = "UTF-8"
 
         filesMatching("fabric.mod.json") {
             expand(inputs.properties)
         }
     }
+
+    jar {
+        from("LICENSE") {
+            rename { "${it}_${rootProject.name}" }
+        }
+    }
+
+    /*shadowJar {
+        archiveBaseName.set(rootProject.name)
+        archiveClassifier.set("")
+
+        /*listOf(
+            "com.ryderbelserion.vital"
+        ).forEach {
+            relocate(it, "libs.$it")
+        }*/
+    }*/
 }
