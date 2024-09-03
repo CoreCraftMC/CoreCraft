@@ -13,13 +13,6 @@ base {
 
 loom {
     splitEnvironmentSourceSets()
-
-    mods {
-        create("corecraft") {
-            sourceSet("main")
-            sourceSet("client")
-        }
-    }
 }
 
 dependencies {
@@ -30,6 +23,10 @@ dependencies {
     modImplementation(libs.fabric.loader)
 
     modImplementation(libs.fabric.api)
+
+    implementation(libs.vital.common)
+
+    api(project(":common"))
 }
 
 tasks {

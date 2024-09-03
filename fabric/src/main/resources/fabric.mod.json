@@ -8,15 +8,12 @@
     "ryderbelserion"
   ],
   "contact": {},
-  "license": "All-Rights-Reserved",
+  "license": "MIT",
   "icon": "assets/chicken.png",
   "environment": "server",
   "entrypoints": {
     "main": [
       "me.corecraft.CoreCraft"
-    ],
-    "client": [
-      "me.corecraft.client.CoreCraft"
     ]
   },
   "mixins": [],

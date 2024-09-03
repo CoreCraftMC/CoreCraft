@@ -1,8 +1,8 @@
 package me.corecraft;
 
-import net.fabricmc.api.ModInitializer;
+import me.corecraft.vital.Vital;
 
-public class CoreCraft implements ModInitializer {
+public class CoreCraft extends Vital {
 
     @Override
     public void onInitialize() {
