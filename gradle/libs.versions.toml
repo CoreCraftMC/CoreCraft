@@ -1,7 +1,6 @@
 [versions]
 # Paper API
-paper = "1.21-R0.1-SNAPSHOT"
-spigot = "1.21-R0.1-SNAPSHOT"
+paper = "1.21.1-R0.1-SNAPSHOT"
 velocity = "3.3.0-SNAPSHOT"
 
 # Gradle Plugins
@@ -9,31 +8,22 @@ paperweight = "1.7.1"
 runPaper = "2.3.0"
 
 # Libraries
+annotations = "24.1.0"
 adventure = "4.17.0"
-websockets = "1.5.7"
-collections = "4.4"
-apache = "3.15.0"
-zstd = "1.5.6-4"
-json = "20240303"
-vital = "2.7"
+vital = "2.8.4"
 
 # Mojang
-minecraft = "1.21"
-authlib = "1.5.21"
+minecraft = "1.21.1"
 
 # Shadow
-annotations = "24.1.0"
-shadowJar = "8.1.7"
+shadowJar = "8.3.0"
 
-# Paper Plugins
+# Bukkit Plugins
+placeholderapi = "2.11.5"
 luckperms = "5.4"
-floodgate = "2.4.1-SNAPSHOT"
-
-decentholograms = "2.8.6"
-placeholderapi = "2.11.4"
-vault = "1.7"
 
 [plugins]
+# Plugins
 paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
 shadowJar = { id = "io.github.goooler.shadow", version.ref = "shadowJar" }
 
@@ -42,32 +32,23 @@ runVelocity = { id = "xyz.jpenilla.run-velocity", version.ref = "runPaper" }
 runPaper = { id = "xyz.jpenilla.run-paper", version.ref = "runPaper" }
 
 [libraries]
+# Paper API
 velocity = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
 paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
-spigot = { module = "org.spigotmc:spigot-api", version.ref = "spigot" }
 
-adventureLegacy = { module = "net.kyori:adventure-text-serializer-legacy", version.ref = "adventure" }
+# Adventure API
 adventureMiniMessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
 adventureLogger = { module = "net.kyori:adventure-text-logger-slf4j", version.ref = "adventure" }
 adventureApi = { module = "net.kyori:adventure-api", version.ref = "adventure" }
 
+# Vital
 vital-velocity = { module = "com.ryderbelserion.vital:velocity", version.ref = "vital" }
 vital-common = { module = "com.ryderbelserion.vital:common", version.ref = "vital" }
 vital-paper = { module = "com.ryderbelserion.vital:paper", version.ref = "vital" }
 
-# Paper
-decentholograms = { module = "com.github.decentsoftware-eu:decentholograms", version.ref = "decentholograms" }
-placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholderapi" }
-vault = { module = "com.github.MilkBowl:VaultAPI", version.ref = "vault" }
-luckperms = { module = "net.luckperms:api", version.ref = "luckperms" }
-
-# Core
-collections = { module = "org.apache.commons:commons-collections4", version.ref = "collections" }
-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "websockets" }
+# Common
 annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
-commons = { module = "org.apache.commons:commons-lang3", version.ref = "apache" }
-zstd = { module = "com.github.luben:zstd-jni", version.ref = "zstd" }
-json = { module = "org.json:json", version.ref = "json" }
 
-# Velocity
-floodgate = { module = "org.geysermc.floodgate:api", version.ref = "floodgate" }
+# Paper
+placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholderapi" }
+luckperms = { module = "net.luckperms:api", version.ref = "luckperms" }
