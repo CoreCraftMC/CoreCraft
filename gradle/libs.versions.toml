@@ -2,12 +2,22 @@
 paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
 runVelocity = { id = "xyz.jpenilla.run-velocity", version.ref = "runPaper" }
 runPaper = { id = "xyz.jpenilla.run-paper", version.ref = "runPaper" }
+
+loom = { id = "fabric-loom", version.ref = "loom" }
+
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
 
 [versions]
 # Paper
 paper = "1.21.1-R0.1-SNAPSHOT"
 velocity = "3.3.0-SNAPSHOT"
+
+# Fabric
+api = "0.103.0+1.21.1"
+loom = "1.7-SNAPSHOT"
+loader = "0.16.3"
+
+# Mojang
 minecraft = "1.21.1"
 
 # Gradle Plugins
@@ -29,6 +39,11 @@ vital = "2.8.3"
 # Servers
 velocity = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
 paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+
+# Fabric
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "api" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "loader" }
 
 # Kyori
 kyori-logger = { module = "net.kyori:adventure-text-logger-slf4j", version.ref = "adventure" }

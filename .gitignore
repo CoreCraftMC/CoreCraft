@@ -12,6 +12,9 @@ paper/.gradle
 paper/build
 paper/run
 
+fabric/.gradle
+fabric/build
+
 velocity/.gradle
 velocity/build
 velocity/run

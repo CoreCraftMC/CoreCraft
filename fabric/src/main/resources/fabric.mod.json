@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "corecraft",
+  "version": "${version}",
+  "name": "CoreCraft",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/chicken.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "me.corecraft.CoreCraft"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
