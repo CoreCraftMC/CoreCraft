@@ -1,54 +1,46 @@
+[plugins]
+paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
+runPaper = { id = "xyz.jpenilla.run-paper", version.ref = "runPaper" }
+shadow = { id = "io.github.goooler.shadow", version.ref = "shadow" }
+
 [versions]
-# Paper API
+# Paper
 paper = "1.21.1-R0.1-SNAPSHOT"
-velocity = "3.3.0-SNAPSHOT"
+minecraft = "1.21.1"
 
 # Gradle Plugins
 paperweight = "1.7.1"
 runPaper = "2.3.0"
-
-# Libraries
-annotations = "24.1.0"
-adventure = "4.17.0"
-vital = "2.8.4"
-
-# Mojang
-minecraft = "1.21.1"
-
-# Shadow
-shadowJar = "8.3.0"
+shadow = "8.3.0"
 
 # Bukkit Plugins
-placeholderapi = "2.11.5"
-luckperms = "5.4"
+placeholderapi = "2.11.6"
 
-[plugins]
-# Plugins
-paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
-shadowJar = { id = "io.github.goooler.shadow", version.ref = "shadowJar" }
-
-# Paper API
-runVelocity = { id = "xyz.jpenilla.run-velocity", version.ref = "runPaper" }
-runPaper = { id = "xyz.jpenilla.run-paper", version.ref = "runPaper" }
+# Libraries
+packetevents = "2.4.0"
+adventure = "4.17.0"
+yardwatch = "2.0.0"
+hikari = "4.0.3"
+vital = "2.8.4"
 
 [libraries]
-# Paper API
-velocity = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
+# Servers
 paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
 
-# Adventure API
-adventureMiniMessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
-adventureLogger = { module = "net.kyori:adventure-text-logger-slf4j", version.ref = "adventure" }
-adventureApi = { module = "net.kyori:adventure-api", version.ref = "adventure" }
+# Kyori
+kyori-logger = { module = "net.kyori:adventure-text-logger-slf4j", version.ref = "adventure" }
+kyori-text = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
+kyori-api = { module = "net.kyori:adventure-api", version.ref = "adventure" }
 
-# Vital
-vital-velocity = { module = "com.ryderbelserion.vital:velocity", version.ref = "vital" }
-vital-common = { module = "com.ryderbelserion.vital:common", version.ref = "vital" }
-vital-paper = { module = "com.ryderbelserion.vital:paper", version.ref = "vital" }
+# Bukkit Plugins
+packet-events = { module = "com.github.retrooper:packetevents-spigot", version.ref = "packetevents" }
+yardwatch = { module = "com.github.YouHaveTrouble:YardWatchAPI", version.ref = "yardwatch" }
+placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholderapi" }
 
 # Common
-annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+vital-common = { module = "com.ryderbelserion.vital:common", version.ref = "vital" }
+vital-paper = { module = "com.ryderbelserion.vital:paper", version.ref = "vital" }
+hikari-cp = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
 
-# Paper
-placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholderapi" }
-luckperms = { module = "net.luckperms:api", version.ref = "luckperms" }
+[bundles]
+adventure = [ "kyori-api", "kyori-text", "kyori-logger" ]
