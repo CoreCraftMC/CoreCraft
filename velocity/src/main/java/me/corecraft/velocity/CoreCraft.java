@@ -1,7 +1,7 @@
 package me.corecraft.velocity;
 
 import com.google.inject.Inject;
-import com.ryderbelserion.velocity.Vital;
+import com.ryderbelserion.vital.velocity.Vital;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.plugin.Plugin;
@@ -10,7 +10,7 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import net.kyori.adventure.text.logger.slf4j.ComponentLogger;
 import java.nio.file.Path;
 
-@Plugin(id = "corecraft", name = "CoreCraft", version = "0.0.1", description = "the core plugin for play.corecraft.me!", authors = {"ryderbelserion", "svenjareissaus"})
+@Plugin(id = "corecraft", name = "CoreCraft", version = "1.0.0", description = "the core plugin for play.corecraft.me!", authors = {"ryderbelserion", "svenjareissaus"})
 public class CoreCraft extends Vital {
 
     private static CoreCraft plugin;
