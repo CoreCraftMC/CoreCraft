@@ -5,7 +5,5 @@ plugins {
 }
 
 dependencies {
-    compileOnly(libs.adventureMiniMessage)
-    compileOnly(libs.adventureLogger)
-    compileOnly(libs.adventureApi)
+    compileOnly(libs.bundles.adventure)
 }

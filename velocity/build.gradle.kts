@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.runVelocity)
-    alias(libs.plugins.shadowJar)
+    alias(libs.plugins.shadow)
 
     `velocity-plugin`
 }
