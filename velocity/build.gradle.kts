@@ -5,6 +5,8 @@ plugins {
     `velocity-plugin`
 }
 
+project.version = "1.0.0"
+
 dependencies {
     annotationProcessor(libs.velocity)
     compileOnly(libs.velocity)
